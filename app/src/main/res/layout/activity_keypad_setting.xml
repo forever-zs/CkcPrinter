@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/title">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0dip"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="数字训练"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="40.0dip"
+        android:background="@drawable/circle_rectangle_grey"
+        android:padding="10.0dip"
+        android:text="该模块旨在帮助您熟悉纵横输入法数字键盘，单击'选项'按钮可以自定义训练模式和训练时间，并且您的训练成果可以实时显示，赶紧挑战吧！"
+        android:textSize="18.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.0dip"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_practiceTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/tv_practiceMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:text="训练模式 ：计时模式"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.0dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20.0dip">
+
+        <Button
+            android:id="@+id/btn_option"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_rectangle_oragne"
+            android:padding="20.0dip"
+            android:text="选项"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/circle_rectangle_oragne"
+            android:padding="20.0dip"
+            android:text="开始"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+</LinearLayout>

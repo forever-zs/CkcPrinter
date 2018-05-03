@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.forever.ckc.ckcprinter">
+
+    <application
+        android:name="com.forever.ckcprinter.app.App"
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.forever.ckcprinter.view.activity.MainActivity" />
+        <activity android:name="com.forever.ckcprinter.view.activity.GuideActivity" />
+        <activity android:name="com.forever.ckcprinter.view.activity.article.ArticleSettingActivity" />
+        <activity android:name="com.forever.ckcprinter.view.activity.article.ArticleOptionActivity" />
+        <activity android:name="com.forever.ckcprinter.view.activity.wordGroup.WordGroupOptionActivity" />
+        <activity android:name="com.forever.ckcprinter.view.activity.wordGroup.WordGroupSettingActivity" />
+        <activity
+            android:name="com.forever.ckcprinter.view.activity.wordGroup.WordGroupPracticeActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.forever.ckcprinter.view.activity.simpleChineseCharacter.SimpleChineseOptionActivity" />
+        <activity android:name="com.forever.ckcprinter.view.activity.simpleChineseCharacter.SimpleChineseSettingAvtivity" />
+        <activity android:name="com.forever.ckcprinter.view.activity.writeBrush.WriteBrushSingleSelectionActivity"/>
+        <activity android:name="com.forever.ckcprinter.view.activity.writeBrush.WriteBrushSingleSelectionCollectionActivity"/>
+        <activity android:name="com.forever.ckcprinter.view.activity.writeBrush.WriteBrushJudgeActivity"/>
+        <activity android:name="com.forever.ckcprinter.view.activity.writeBrush.WriteBrushJudgeCollectionActivity"/>
+        <activity android:name="com.forever.ckcprinter.view.activity.writeBrush.WriteBrushFillActivity" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.forever.ckcprinter.view.activity.writeBrush.WriteBrushFillCollectionActivity"/>
+        <activity android:name="com.forever.ckcprinter.view.activity.writeBrush.WriteBrushChallengeActivity" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.forever.ckcprinter.view.activity.writeBrush.WriteBrushChallengeSettingActivity"/>
+        <activity android:name="com.forever.ckcprinter.view.activity.writeBrush.WriteBrushChallengeOptionActivity"/>
+        <activity android:name="com.forever.ckcprinter.view.activity.writeBrush.WriteBrushSelectActivity"/>
+        <activity android:name="com.forever.ckcprinter.view.activity.singleCharacter.SingleCharacterSettingActivity"/>
+        <activity android:name="com.forever.ckcprinter.view.activity.singleCharacter.SingleCharacterOptionActivity"/>
+        <activity android:name="com.forever.ckcprinter.view.activity.singleCharacter.SingleCharacterPracticeActivity" android:windowSoftInputMode="stateVisible"/>
+
+        <activity
+            android:name="com.forever.ckcprinter.view.activity.article.ArticlePracticeActivity"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+
+        <activity android:name="com.forever.ckcprinter.view.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.forever.ckcprinter.view.activity.game.IntestingPracticeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.forever.ckcprinter.view.activity.ResultActivity" />
+    </application>
+
+</manifest>

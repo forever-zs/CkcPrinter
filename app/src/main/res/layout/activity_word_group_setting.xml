@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:textSize="20.0sp"
+            android:textColor="@color/white"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="词组训练"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="18.0sp"
+        android:id="@+id/tv_message"
+        android:background="@drawable/circle_rectangle_grey"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="40.0dip"
+        android:layout_marginRight="10.0dip"
+        android:text="在词组训练中，训练的词组用黑色标出，首次输入错误输入框将变为红色以示警告。长按背景图片，您可以查看该词组对应的纵横码，单击'开始'按钮开始训练，两次之内输入正确，将自动生成新的图片。" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip">
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@+id/tv_practiceTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@+id/tv_practiceMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:text="训练模式 ：计时模式" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:id="@+id/tv_articleMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:text="词组模式 ：二字词组" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip">
+
+        <Button
+            android:textSize="18.0sp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_option"
+            android:background="@drawable/circle_rectangle_oragne"
+            android:padding="20.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="选项" />
+
+        <Button
+            android:textSize="18.0sp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_start"
+            android:background="@drawable/circle_rectangle_oragne"
+            android:padding="20.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="开始" />
+    </LinearLayout>
+</LinearLayout>
